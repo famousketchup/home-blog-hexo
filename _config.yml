@@ -94,3 +94,11 @@ theme: brewski
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+admin:
+  username: freek
+  # Password hint: regular pass _ BloG
+  password_hash: $2a$12$Jcdvtpp6N6k7an4yAQU9iOyp.3DemBVcPiZHWVAi/7RVUr93LiXCK
+  secret: a secret somethingorother
+metadata:
+  author_id: freek
+  language: ru
