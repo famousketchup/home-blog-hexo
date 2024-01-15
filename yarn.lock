@@ -1992,6 +1992,11 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
+hexo-tag-collapse-spoiler@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/hexo-tag-collapse-spoiler/-/hexo-tag-collapse-spoiler-1.0.0.tgz"
+  integrity sha512-V7dyfPcBcDKy4U8Segc8qkRtDhqT2sriUAWzMOhNZXc4QUbfIPDnas7s2t6XB03ulH06AsuerMNCI5juQumJsg==
+
 hexo-theme-landscape@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/hexo-theme-landscape/-/hexo-theme-landscape-1.0.0.tgz"
