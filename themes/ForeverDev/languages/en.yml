@@ -1,0 +1,37 @@
+---
+prev: Previous
+next: Next
+prev_post: Previous
+next_post: Next
+read_more: "More&hellip; "
+untitled: (Untitled)
+translate_original: Translate the original address
+meta_description: >
+  ForeverDev personal single-page & Blog website
+  (Order web dev from us, top quality development)
+  [Powered By Hexo, ty]
+
+empty_post_lipsum: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Quisque rutrum, est a tristique aliquam, dolor nunc tincidunt nisl,
+  vitae placerat eros tortor in nibh.
+  Praesent nec felis sit amet augue venenatis condimentum.
+  Integer ullamcorper turpis ante, vel molestie arcu finibus eget.
+  Fusce id leo arcu. Cras sit amet egestas leo, tristique tristique nisl.
+
+section-general-intro: >
+  Independent Developer, Frontend predominantly and Backend.
+  Interested in utilizing the most recent and most effective tools,
+  frameworks and libraries, using best practices. With a will to always
+  adapt, learn and use gained knowledge in practice, solo or in a team.
+  Started my experience in IT industry 13 years ago.
+
+section_background_skills: >
+  Python, AngularJS / Vue.js, ES6+ / CoffeeScript, NPM / Yarn / Gulp /
+  Grunt, Sass / Scss / Less, Haml / Pug, Wordpress / PHP, Arch-based /
+  Ubuntu-based Linux, (Neo)Vim / VSCode, Git, Docker, and many more...
+
+section_background_based_in: Riga, Latvia, The middle of Baltic States
+section_background_worked_in: >
+  As a freelancer, at 4Finance, Zelt, Inforg.am and 3 more...
+section_background_roles: Middle / senior Frontend / Fullstack developer

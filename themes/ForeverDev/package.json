@@ -1,0 +1,26 @@
+{
+  "name": "hexo-theme-ForeverDev",
+  "version": "1.0.0",
+  "description": "Custom theme for foreverdev.xyz website, based/refactored from 'brewski' theme (ty)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitriy-korotayev/hexo-theme-ForeverDev"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "personal",
+    "custom",
+    "foreverdev",
+    "pug",
+    "python",
+    "oss"
+  ],
+  "author": "Dmitriy Korotayev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitriy-korotayev/hexo-theme-ForeverDev/issues"
+  },
+  "homepage": "https://foreverdev.xyz",
+  "devDependencies": {}
+}

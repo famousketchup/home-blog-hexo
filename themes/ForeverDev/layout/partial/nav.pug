@@ -1,0 +1,10 @@
+mixin links
+  each text, href in {'#blog-posts': 'My Blog', '#background': 'About Me', '#contact-me': 'Background', '#hobbies': 'Hobbies'}
+    li.nav-list-item
+      a.nav-list-link(href=href)= text
+
+ul.nav.sticky
+  +links
+
+ul.nav.main
+  +links
