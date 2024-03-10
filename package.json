@@ -1,5 +1,5 @@
 {
-  "name": "ForeverDev-onepage-blog",
+  "name": "foreverdev-onepage-blog",
   "version": "0.1.0",
   "private": false,
   "scripts": {
@@ -14,6 +14,7 @@
   "dependencies": {
     "hexo": "^7.0.0",
     "hexo-admin": "^2.3.0",
+    "hexo-browsersync": "^0.3.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -23,13 +24,12 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-pug": "^3.0.0",
-    "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-collapse-spoiler": "^1.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "mime": "^4.0.1"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "eslint": "^8.56.0"
   }
 }

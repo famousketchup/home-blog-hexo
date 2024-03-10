@@ -102,3 +102,8 @@ admin:
 metadata:
   author_id: freek
   language: ru
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
