@@ -326,8 +326,15 @@ section.general section.social-platforms .socials a {
 
 section.general section.my-photos {
   float: right;
-  width: 42.75%;
   margin-right: 5px;
+  width: 42.75%;
+  height: 495px;
+}
+
+section.general section.my-photos img {
+  display: block;
+  height: 100%;
+  float: right;
 }
 
 section.general aside.resume-email {
