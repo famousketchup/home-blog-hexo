@@ -17,9 +17,11 @@ section#home.hero
                 = ' '
               h2.mb-4= __('home_job_title')
               p
-                a.btn.btn-primary.py-3.px-4(href=config.linkedin_url)= __('home_hire_me')
+                a.btn.btn-primary.py-3.px-4(href=config.email_mailto)= __('home_hire_us')
                 = ' '
-                a.btn.btn-white.btn-outline-white.py-3.px-4(href='#projects')= __('home_my_works')
+                a.btn.btn-white.btn-outline-white.py-3.px-4(href=config.telegram_url)= __('home_message_me')
+                = ' '
+                a#link-my-works.btn.btn-white.btn-outline-white.py-3.px-4(href='#projects')= __('home_my_works')
     .slider-item
       .overlay
       .container
@@ -37,6 +39,8 @@ section#home.hero
                 = ' '
                 = __('home_location')
               p
-                a.btn.btn-primary.py-3.px-4(href=config.linkedin_url)= __('home_hire_me')
+                a.btn.btn-primary.py-3.px-4(href=config.email_mailto)= __('home_hire_us')
                 = ' '
-                a.btn.btn-white.btn-outline-white.py-3.px-4(href='#projects')= __('home_my_works')
+                a.btn.btn-white.btn-outline-white.py-3.px-4(href=config.telegram_url)= __('home_message_me')
+                // = ' '
+                // a.btn.btn-white.btn-outline-white.py-3.px-4(href='#projects')= __('home_my_works')

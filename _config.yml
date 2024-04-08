@@ -15,6 +15,7 @@ language: en
 author: Dmitriy Korotayev
 timezone: "Europe/Riga"
 email: foreveradeveloper@gmail.com
+email_mailto: mailto:foreveradeveloper@gmail.com
 phone: +371 29674887
 phone_int: 37129674887
 
