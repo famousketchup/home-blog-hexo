@@ -1,44 +1,26 @@
-section#resume-section.ftco-section.ftco-no-pb
+section#resume.ftco-section.ftco-no-pb
   .container
     .row.justify-content-center.pb-5
       .col-md-10.heading-section.text-center.ftco-animate
-        h1.big.big-2 Resume
-        h2.mb-4 Resume
-        p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+        h1.big.big-2= __('resume_title_big')
+        h2.mb-4= __('resume_title')
+        p= __('resume_text')
     .row
-      .col-md-6
-        .resume-wrap.ftco-animate
-          span.date 2014-2015
-          h2 Master Degree of Design
-          span.position Cambridge University
-          p.mt-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-        .resume-wrap.ftco-animate
-          span.date 2014-2015
-          h2 Bachelor&apos;s Degree of C.A
-          span.position Cambridge University
-          p.mt-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-        .resume-wrap.ftco-animate
-          span.date 2014-2015
-          h2 Diploma in Computer
-          span.position Cambridge University
-          p.mt-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-      .col-md-6
-        .resume-wrap.ftco-animate
-          span.date 2014-2015
-          h2 Art & Creative Director
-          span.position Cambridge University
-          p.mt-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-        .resume-wrap.ftco-animate
-          span.date 2014-2015
-          h2 Wordpress Developer
-          span.position Cambridge University
-          p.mt-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-        .resume-wrap.ftco-animate
-          span.date 2017-2018
-          h2 UI/UX Designer
-          span.position Cambridge University
-          p.mt-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      // Workaround to list resume entries left-to-right
+      each resumeNums in [[1, 3, 5, 7], [2, 4, 6, 8]]
+        .col-md-6
+          each resumeNum in resumeNums
+            - const resumeDate = __('resume_' + resumeNum + '_years')
+            - const resumeSubtitle = __('resume_' + resumeNum + '_subtitle')
+            - const resumePosition = __('resume_' + resumeNum + '_position')
+            - const resumeDescription = __('resume_' + resumeNum + '_description')
+            .resume-wrap.ftco-animate
+              span.date= resumeDate
+              h2= resumeSubtitle
+              span.position= resumePosition
+              p.mt-4= resumeDescription
     .row.justify-content-center.mt-5
       .col-md-6.text-center.ftco-animate
         p
-          a.btn.btn-primary.py-4.px-5(href='#') Download CV
+          a.btn.btn-primary.py-3.px-3(href=url_for(config.cv_file_path))
+            = __('resume_download_cv')

@@ -1,31 +1,38 @@
 .container
-  a.navbar-brand(href='index.html') Clark
-  button.navbar-toggler.js-fh5co-nav-toggle.fh5co-nav-toggle(type='button', data-toggle='collapse', data-target='#ftco-nav', aria-controls='ftco-nav', aria-expanded='false', aria-label='Toggle navigation')
+  a.navbar-brand(href='index.html')= config.brand
+  button.navbar-toggler.js-fh5co-nav-toggle.fh5co-nav-toggle(
+    type='button',
+    data-toggle='collapse',
+    data-target='#ftco-nav',
+    aria-controls='ftco-nav',
+    aria-expanded='false',
+    aria-label=__('nav_toggle_navigation')
+    )
     span.oi.oi-menu
     | Menu
   #ftco-nav.collapse.navbar-collapse
     ul.navbar-nav.nav.ml-auto
       li.nav-item
-        a.nav-link(href='#home-section')
-          span Home
+        a.nav-link(href='#home')
+          span= __('Home')
       li.nav-item
-        a.nav-link(href='#about-section')
-          span About
+        a.nav-link(href='#about')
+          span= __('About')
       li.nav-item
-        a.nav-link(href='#resume-section')
-          span Resume
+        a.nav-link(href='#resume')
+          span= __('Resume')
       li.nav-item
-        a.nav-link(href='#services-section')
-          span Services
+        a.nav-link(href='#services')
+          span= __('Services')
       li.nav-item
-        a.nav-link(href='#skills-section')
-          span Skills
+        a.nav-link(href='#skills')
+          span= __('Skills')
       li.nav-item
-        a.nav-link(href='#projects-section')
-          span Projects
+        a.nav-link(href='#projects')
+          span= __('Projects')
       li.nav-item
-        a.nav-link(href='#blog-section')
-          span My Blog
+        a.nav-link(href='#blog')
+          span= __('My Blog')
       li.nav-item
-        a.nav-link(href='#contact-section')
-          span Contact
+        a.nav-link(href='#contact')
+          span= __('Contact')

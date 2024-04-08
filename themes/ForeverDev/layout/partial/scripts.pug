@@ -1,22 +1,22 @@
 // loader
 #ftco-loader.show.fullscreen
-    svg.circular(width='48px', height='48px')
-        circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
-            circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
+  svg.circular(width='48px', height='48px')
+    circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+      circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
 
-script(src='js/jquery.min.js')
-script(src='js/jquery-migrate-3.0.1.min.js')
-script(src='js/popper.min.js')
-script(src='js/bootstrap.min.js')
-script(src='js/jquery.easing.1.3.js')
-script(src='js/jquery.waypoints.min.js')
-script(src='js/jquery.stellar.min.js')
-script(src='js/owl.carousel.min.js')
-script(src='js/jquery.magnific-popup.min.js')
-script(src='js/aos.js')
-script(src='js/jquery.animateNumber.min.js')
-script(src='js/scrollax.min.js')
-script(src='js/main.js')
+script(src=url_for('js/jquery.min.js'))
+script(src=url_for('js/jquery-migrate-3.0.1.min.js'))
+script(src=url_for('js/popper.min.js'))
+script(src=url_for('js/bootstrap.min.js'))
+script(src=url_for('js/jquery.easing.1.3.js'))
+script(src=url_for('js/jquery.waypoints.min.js'))
+script(src=url_for('js/jquery.stellar.min.js'))
+script(src=url_for('js/owl.carousel.min.js'))
+script(src=url_for('js/jquery.magnific-popup.min.js'))
+script(src=url_for('js/aos.js'))
+script(src=url_for('js/jquery.animateNumber.min.js'))
+script(src=url_for('js/scrollax.min.js'))
+script(src=url_for('js/main.js'))
 
 
 //- Analytics tracking
@@ -39,22 +39,22 @@ script(src='js/main.js')
 //     })
     
 //- Browsersync
-script(id="__bs_script__").
-    //<![CDATA[
-    (function() {
-        try {
-        var script = document.createElement('script');
-        if ('async') {
-            script.async = true;
-        }
-        script.src = 'http://HOST:3001/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
-        if (document.body) {
-            document.body.appendChild(script);
-        } else if (document.head) {
-            document.head.appendChild(script);
-        }
-        } catch (e) {
-        console.error("Browsersync: could not append script tag", e);
-        }
-    })()
-    //]]></script>
+// script(id="__bs_script__").
+//     //<![CDATA[
+//     (function() {
+//         try {
+//         var script = document.createElement('script');
+//         if ('async') {
+//             script.async = true;
+//         }
+//         script.src = 'http://HOST:3001/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+//         if (document.body) {
+//             document.body.appendChild(script);
+//         } else if (document.head) {
+//             document.head.appendChild(script);
+//         }
+//         } catch (e) {
+//         console.error("Browsersync: could not append script tag", e);
+//         }
+//     })()
+//     //]]></script>

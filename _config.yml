@@ -3,19 +3,32 @@
 ## Source: https://github.com/hexojs/hexo/
 ---
 # Site
-title: ForeverDev
+brand: ForeverDev
+title: ForeverDev - Your Ultimate Website Artisan!
 subtitle: ""
 description: ""
 keywords: blog
+services: [fullstack, api, seo, training, ecommerce, strategy]
 
+# Local info
 language: en
 author: Dmitriy Korotayev
 timezone: "Europe/Riga"
+email: foreveradeveloper@gmail.com
+phone: +371 29674887
+phone_int: 37129674887
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set
-## url as 'https://username.github.io/project'
+# URL's / Paths
 url: http://foreverdev.xyz
+linkedin_url: https://linkedin.com/in/foreverdev
+telegram_url: https://t.me/MentalBruteforce
+telegram_handle: "@MentalBruteforce"
+facebook_url: https://facebook.com/ForeverADeveloper
+instagram_url: https://instagram.com/ForeverADeveloper
+github_url: https://github.com/dmitriy-korotayev
+twitter_url: https://twitter.com/ForeverADev
+soundcloud_url: https://soundcloud.com/dmitriy-korotayev
+cv_file_path: docs/CV - Dmitriy Korotayev.pdf
 
 permalink: :year/:month/:day/:title/
 permalink_defaults:

@@ -1,34 +1,42 @@
-section#home-section.hero
+section#home.hero
   .home-slider.owl-carousel
     .slider-item
       .overlay
       .container
         .row.d-md-flex.no-gutters.slider-text.align-items-end.justify-content-end(data-scrollax-parent='true')
-          .one-third.js-fullheight.order-md-last.img(style='background-image:url(img/bg_1.png);')
+          .one-third.js-fullheight.order-md-last.img(style='background-image:url(img/home-me-collage.png);')
             .overlay
           .one-forth.d-flex.align-items-center.ftco-animate(data-scrollax='properties: { translateY: "70%" }')
             .text
-              span.subheading Hello!
-              h1.mb-4.mt-3 I&apos;m 
-                span Clark Thompson
-              h2.mb-4 A Freelance Web Designer
-              p
-                a.btn.btn-primary.py-3.px-4(href='#') Hire me
+              span.subheading= __('home_hello')
+              = ' '
+              h1.mb-4.mt-3
+                != __('home_im')
                 = ' '
-                a.btn.btn-white.btn-outline-white.py-3.px-4(href='#') My works
+                span= config.author
+                = ' '
+              h2.mb-4= __('home_job_title')
+              p
+                a.btn.btn-primary.py-3.px-4(href=config.linkedin_url)= __('home_hire_me')
+                = ' '
+                a.btn.btn-white.btn-outline-white.py-3.px-4(href='#projects')= __('home_my_works')
     .slider-item
       .overlay
       .container
         .row.d-flex.no-gutters.slider-text.align-items-end.justify-content-end(data-scrollax-parent='true')
-          .one-third.js-fullheight.order-md-last.img(style='background-image:url(img/bg_2.png);')
+          .one-third.js-fullheight.order-md-last.img(style='background-image:url(img/home-skills-pile.png);')
             .overlay
           .one-forth.d-flex.align-items-center.ftco-animate(data-scrollax='properties: { translateY: "70%" }')
             .text
-              span.subheading Hello!
-              h1.mb-4.mt-3 I&apos;m a 
-                span web designer
-                | based in London
-              p
-                a.btn.btn-primary.py-3.px-4(href='#') Hire me
+              span.subheading= __('home_hello')
+              = ' '
+              h1.mb-4.mt-3
+                != __('home_im')
                 = ' '
-                a.btn.btn-white.btn-outline-white.py-3.px-4(href='#') My works
+                span= __('home_job_title_short')
+                = ' '
+                = __('home_location')
+              p
+                a.btn.btn-primary.py-3.px-4(href=config.linkedin_url)= __('home_hire_me')
+                = ' '
+                a.btn.btn-white.btn-outline-white.py-3.px-4(href='#projects')= __('home_my_works')

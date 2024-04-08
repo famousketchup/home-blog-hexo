@@ -1,15 +1,197 @@
 ---
+meta_description: >
+  ForeverDev personal / blog website
+  (Order web dev from us to enjoy top quality development)
+  [Powered By Hexo]
+
+nav_toggle_navigation: Toggle navigation
+nav_link_home: Home
+nav_link_about: About
+nav_link_resume: Resume
+nav_link_services: Services
+nav_link_skills: Skills
+nav_link_projects: Projects
+nav_link_blog: My Blog
+nav_link_contact: Contact
+
+home_hello: Hello!
+home_im: "I&apos;m"
+home_job_title: A Freelance Fullstack Developer
+home_hire_me: Hire me
+home_my_works: My works
+home_job_title_short: web developer
+home_location: based in Riga, Latvia
+
+about_title_big: "About"
+about_title: "About Me"
+about_text: >
+  Independent Developer, Frontend (predominantly) and Backend.
+  Interested in utilizing the most recent and most effective tools,
+  frameworks and libraries, using best practices. With a will to always
+  adapt, learn and use gained knowledge in practice, solo or in a team.
+  Started my professional roadmap in IT 13 years ago.
+about_name: "Name:"
+about_name_value: "Dmitriy Korotayev"
+about_birth_date: "Date of birth:"
+about_birth_date_value: "August 19th, 1993"
+about_location: "Location:"
+about_location_value: "Riga, Latvia, EU"
+about_email: "Email:"
+about_phone: "Phone:"
+about_projects_count: "50"
+about_projects_complete: Projects complete
+about_download_cv: Download CV
+
+resume_title_big: Resume
+resume_title: Resume
+resume_text: >
+  Welcome to my Resume section! Here, you'll discover my
+  professional journey, highlighting roles, achievements,
+  and skills developed over the years. Dive into the
+  experiences that have shaped my career and aspirations.
+resume_1_years: 2020-Present
+resume_1_subtitle: Freelance
+resume_1_position: Full Stack Developer
+resume_1_description: >
+  Implemented and tested responsive web applications,
+  optimized for usability and speed. Maintained coding
+  standards, built reusable frontend libraries, developed
+  complex Ruby/Rails backends, conducted quality tests,
+  ensured comprehensive testing coverage, and managed
+  project planning.
+resume_2_years: 2020-Present
+resume_2_subtitle: Health and well-being
+resume_2_position: Career Break
+resume_2_description: >
+  Recently I took a career break, focusing on mental health,
+  family, and personal growth, including enhancing my online
+  presence and technical skills in web development. This
+  period of introspection and learning has prepared me for
+  a new role where I can apply my enriched perspective and
+  capabilities.
+resume_3_years: 2018-2020
+resume_3_subtitle: ZELT
+resume_3_position: Frontend Developer
+resume_3_description: >
+  Developed responsive UIs with HTML, CSS, JavaScript, and
+  frameworks like React and Vue.js. Collaborated with
+  designers, optimized for performance, conducted testing,
+  and utilized Git in agile environments. Focused on
+  exceptional user experiences.
+resume_4_years: 2016-2018
+resume_4_subtitle: Infogr.am
+resume_4_position: Frontend Developer
+resume_4_description: >
+  Leveraged advanced proficiency in HTML, CSS, and
+  JavaScript, alongside frameworks such as React and
+  Angular, to engineer immersive, user-centric web
+  interfaces. Ensured optimal responsiveness and
+  cross-browser compatibility. Facilitated seamless
+  collaboration with multidisciplinary teams.
+resume_5_years: 2015-2016
+resume_5_subtitle: 4Finance
+resume_5_position: Senior Frontend Developer
+resume_5_description: >
+  Designed and implemented frontend systems using modern web
+  technologies and React/Redux. Supported UX teams, led
+  agile processes, mentored developers, and collaborated
+  with talented peers, locally and internationally.
+resume_6_years: "2015"
+resume_6_subtitle: Island Port Technologies
+resume_6_position: Senior Frontend Developer
+resume_6_description: >
+  Developed and optimized Angular-based frontend for a
+  secure financial system, incorporating Less, vanilla JS,
+  and Java/Scala/Play backend. Enhanced process efficiency,
+  ensured software quality with automated tests, and
+  optimized for smartphone use.
+resume_7_years: 2014-2015
+resume_7_subtitle: Full-stack Developer
+resume_7_position: TrueVision
+resume_7_description: >
+  Built and maintained Ruby/Rails web application backends,
+  tackled ambitious projects with cutting-edge technologies,
+  debugged and resolved critical incidents, enhanced
+  existing projects, collaborated across teams, designed and
+  improved internal tools, and prepared technical
+  documentation for future workflows.
+resume_8_years: 2011-2012
+resume_8_subtitle: Flipping Enterprises Ltd.
+resume_8_position: Web Developer
+resume_8_description: >
+  Developed frontend and backend features for an internal
+  brokerage system using PHP, jQuery, and Yii2, ensuring
+  code quality and efficiency. Managed priorities, reported
+  to lead management, validated user input, and researched
+  emerging technologies.
+resume_download_cv: Download CV
+services_title_big: Services
+services_title: Services
+services_text: >
+  We offer range of services, tailored to meet your
+  unique needs. Variety of solutions to help you achieve
+  your goals.
+
+service_fullstack_title: Fullstack Web Development
+service_api_title: API Development and Integration
+service_seo_title: SEO Optimization
+service_training_title: Software Documentation and Training
+service_ecommerce_title: E-commerce
+service_strategy_title: Product Strategy
+
+skills_title_big: Skills
+skills_title: My Skills
+skills_text: >
+  Explore my toolkit: a curated showcase of skills refined
+  through diverse challenges and successes.
+skills_1: Front-end Development
+skills_1_percent: "85"
+skills_2: Back-end Development
+skills_2_percent: "70"
+skills_3: HTML5 / CSS3 / Pug
+skills_3_percent: "100"
+skills_4: Sass / Linux / Git
+skills_4_percent: "95"
+skills_5: JavaScript / TypeScript / ES2020+
+skills_5_percent: "90"
+skills_6: Python / Selenium / MySQL
+skills_6_percent: "75"
+skills_7: React.js / Vue.js / Redux
+skills_7_percent: "80"
+skills_8: Ruby / Ruby on Rails / PostgreSQL
+skills_8_percent: "70"
+
+contact_title_big: Contact
+contact_title: Contact Me
+contact_text: >
+  Have a question or want to work together? Feel free to
+  reach out to me using contacts listed below.
+contact_linkedin: LinkedIn Profile
+contact_phone: Contact Number
+contact_email: Email Address
+contact_telegram: Telegram Account
+
+footer_about_title: About
+footer_about_text: >
+  ForeverDev is a personal website of Dmitriy Korotayev,
+  an experienced freelance fullstack developer based in
+  Riga, Latvia (Remote preferred).
+footer_service_fullstack_title: Fullstack Web Dev.
+footer_service_api_title: API Development
+footer_service_seo_title: SEO Optimization
+footer_service_training_title: Docs & Training
+footer_service_ecommerce_title: E-commerce
+footer_service_strategy_title: Product Strategy
+footer_links_title: Links
+footer_question: Have a Question?
+
 prev: Previous
 next: Next
 prev_post: Previous
 next_post: Next
 read_more: "More&hellip; "
 untitled: (Untitled)
-translate_original: Translate the original address
-meta_description: >
-  ForeverDev personal single-page & Blog website
-  (Order web dev from us, top quality development)
-  [Powered By Hexo, ty]
+general: (General)
 
 empty_post_lipsum: >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -18,20 +200,3 @@ empty_post_lipsum: >
   Praesent nec felis sit amet augue venenatis condimentum.
   Integer ullamcorper turpis ante, vel molestie arcu finibus eget.
   Fusce id leo arcu. Cras sit amet egestas leo, tristique tristique nisl.
-
-section-general-intro: >
-  Independent Developer, Frontend predominantly and Backend.
-  Interested in utilizing the most recent and most effective tools,
-  frameworks and libraries, using best practices. With a will to always
-  adapt, learn and use gained knowledge in practice, solo or in a team.
-  Started my experience in IT industry 13 years ago.
-
-section_background_skills: >
-  Python, AngularJS / Vue.js, ES6+ / CoffeeScript, NPM / Yarn / Gulp /
-  Grunt, Sass / Scss / Less, Haml / Pug, Wordpress / PHP, Arch-based /
-  Ubuntu-based Linux, (Neo)Vim / VSCode, Git, Docker, and many more...
-
-section_background_based_in: Riga, Latvia, The middle of Baltic States
-section_background_worked_in: >
-  As a freelancer, at 4Finance, Zelt, Inforg.am and 3 more...
-section_background_roles: Middle / senior Frontend / Fullstack developer
