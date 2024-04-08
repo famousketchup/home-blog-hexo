@@ -1,21 +1,44 @@
-//- Analytics tracking
-if theme.google_analytics
-    script.
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', '#{theme.google_analytics}']);
-        _gaq.push(['_trackPageview']);
+// loader
+#ftco-loader.show.fullscreen
+    svg.circular(width='48px', height='48px')
+        circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+            circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
 
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
-script.
-    document.addEventListener('DOMContentLoaded', function() {
-        Barba.Pjax.start()
-    })
+script(src='js/jquery.min.js')
+script(src='js/jquery-migrate-3.0.1.min.js')
+script(src='js/popper.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.easing.1.3.js')
+script(src='js/jquery.waypoints.min.js')
+script(src='js/jquery.stellar.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/jquery.magnific-popup.min.js')
+script(src='js/aos.js')
+script(src='js/jquery.animateNumber.min.js')
+script(src='js/scrollax.min.js')
+script(src='js/main.js')
+
+
+//- Analytics tracking
+// if theme.google_analytics
+//     script.
+//         var _gaq = _gaq || [];
+//         _gaq.push(['_setAccount', '#{theme.google_analytics}']);
+//         _gaq.push(['_trackPageview']);
+//
+//         (function () {
+//             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//         })();
+
+// script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
+// script.
+//     document.addEventListener('DOMContentLoaded', function() {
+//         Barba.Pjax.start()
+//     })
     
+//- Browsersync
 script(id="__bs_script__").
     //<![CDATA[
     (function() {

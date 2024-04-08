@@ -1,10 +1,31 @@
-mixin links
-  each text, href in {'#blog-posts': 'My Blog', '#background': 'About Me', '#contact-me': 'Background', '#hobbies': 'Hobbies'}
-    li.nav-list-item
-      a.nav-list-link(href=href)= text
-
-ul.nav.sticky
-  +links
-
-ul.nav.main
-  +links
+.container
+  a.navbar-brand(href='index.html') Clark
+  button.navbar-toggler.js-fh5co-nav-toggle.fh5co-nav-toggle(type='button', data-toggle='collapse', data-target='#ftco-nav', aria-controls='ftco-nav', aria-expanded='false', aria-label='Toggle navigation')
+    span.oi.oi-menu
+    | Menu
+  #ftco-nav.collapse.navbar-collapse
+    ul.navbar-nav.nav.ml-auto
+      li.nav-item
+        a.nav-link(href='#home-section')
+          span Home
+      li.nav-item
+        a.nav-link(href='#about-section')
+          span About
+      li.nav-item
+        a.nav-link(href='#resume-section')
+          span Resume
+      li.nav-item
+        a.nav-link(href='#services-section')
+          span Services
+      li.nav-item
+        a.nav-link(href='#skills-section')
+          span Skills
+      li.nav-item
+        a.nav-link(href='#projects-section')
+          span Projects
+      li.nav-item
+        a.nav-link(href='#blog-section')
+          span My Blog
+      li.nav-item
+        a.nav-link(href='#contact-section')
+          span Contact

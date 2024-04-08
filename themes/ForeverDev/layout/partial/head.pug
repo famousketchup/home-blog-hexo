@@ -1,17 +1,30 @@
-meta(charset='utf-8')
-meta(name='X-UA-Compatible', content='IE=edge')
-meta(name='viewport', content='width=device-width, initial-scale=1')
-meta(name="robots", content="index, follow")
-
 title
     block site_title
         = config.title
+
+meta(charset='utf-8')
+meta(
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" 
+  name="viewport")
+meta(name="robots", content="index, follow")
+meta(name='X-UA-Compatible', content='IE=edge')
 
 block description
     meta(name='description', content=config.description ? config.description : __('meta_description'))
     
 
-link(rel='icon', href=url_for(theme.favicon))
-link(rel='stylesheet', href='https://unpkg.com/nanoreset@3.0.1/nanoreset.min.css')
-link(rel='stylesheet', href=url_for('css/theme.css'))
+// link(rel='icon', href=url_for(theme.favicon))
 link(rel='search', type='application/opensearchdescription+xml', href=url_for('atom.xml'), title=config.title)
+
+link(rel='stylesheet', href='https://unpkg.com/nanoreset@3.0.1/nanoreset.min.css')
+link(href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900', rel='stylesheet')
+link(rel='stylesheet', href=url_for('css/open-iconic-bootstrap.min.css'))
+link(rel='stylesheet', href=url_for('css/animate.css'))
+link(rel='stylesheet', href=url_for('css/owl.carousel.min.css'))
+link(rel='stylesheet', href=url_for('css/owl.theme.default.min.css'))
+link(rel='stylesheet', href=url_for('css/magnific-popup.css'))
+link(rel='stylesheet', href=url_for('css/aos.css'))
+link(rel='stylesheet', href=url_for('css/ionicons.min.css'))
+link(rel='stylesheet', href=url_for('css/flaticon.css'))
+link(rel='stylesheet', href=url_for('css/icomoon.css'))
+link(rel='stylesheet', href=url_for('scss/style.css'))

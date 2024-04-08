@@ -1,10 +1,8 @@
 name: ForeverDev
 url: https://github.com/dmitriy-korotayev/hexo-theme-ForeverDev
-favicon: /favicon.svg
-logo: /logo.svg
 
-# Disqus shortname (TODO)
-disqus:
+favicon: /img/favicon.svg
+
 # Analytics (TODO)
 google_analytics:
 # Copyright Information (TODO)
