@@ -7,8 +7,11 @@ favicon: /img/favicon.svg
 
 # Analytics (TODO)
 google_analytics:
-# Copyright Information (TODO)
-copyright:
-  since:
-  name:
-  url:
+
+sass:
+  file: scss/style.scss
+  sourceMap: true
+  outFile: scss/style.css
+  outputStyle: compressed
+  includePaths:
+    - node_modules

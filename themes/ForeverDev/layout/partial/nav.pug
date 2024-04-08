@@ -9,30 +9,13 @@
     aria-label=__('nav_toggle_navigation')
     )
     span.oi.oi-menu
-    | Menu
+      = ' '
+      = __('nav_menu')
   #ftco-nav.collapse.navbar-collapse
     ul.navbar-nav.nav.ml-auto
-      li.nav-item
-        a.nav-link(href='#home')
-          span= __('Home')
-      li.nav-item
-        a.nav-link(href='#about')
-          span= __('About')
-      li.nav-item
-        a.nav-link(href='#resume')
-          span= __('Resume')
-      li.nav-item
-        a.nav-link(href='#services')
-          span= __('Services')
-      li.nav-item
-        a.nav-link(href='#skills')
-          span= __('Skills')
-      li.nav-item
-        a.nav-link(href='#projects')
-          span= __('Projects')
-      li.nav-item
-        a.nav-link(href='#blog')
-          span= __('My Blog')
-      li.nav-item
-        a.nav-link(href='#contact')
-          span= __('Contact')
+      each link in config.nav_links
+        li.nav-item
+          - href = '#'+link
+          a.nav-link(href=href)
+            - title = __('nav_link_' + link)
+            span= title

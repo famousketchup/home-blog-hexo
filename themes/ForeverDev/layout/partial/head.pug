@@ -13,6 +13,10 @@ block description
   meta(
     name='description',
     content=config.description ? config.description : __('meta_description'))
+block keywords
+  meta(
+    name='keywords',
+    content=config.keywords ? config.keywords : __('meta_keywords'))
     
 
 link(rel='icon', href=url_for(theme.favicon))

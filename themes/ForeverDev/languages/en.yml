@@ -5,6 +5,7 @@ meta_description: >
   [Powered By Hexo]
 
 nav_toggle_navigation: Toggle navigation
+nav_menu: Menu
 nav_link_home: Home
 nav_link_about: About
 nav_link_resume: Resume
@@ -84,10 +85,9 @@ resume_4_subtitle: Infogr.am
 resume_4_position: Frontend Developer
 resume_4_description: >
   Leveraged advanced proficiency in HTML, CSS, and
-  JavaScript, alongside frameworks such as React and
-  Angular, to engineer immersive, user-centric web
-  interfaces. Ensured optimal responsiveness and
-  cross-browser compatibility. Facilitated seamless
+  JavaScript, alongside React and Angular, to engineer
+  user-centric web interfaces. Ensured optimal responsiveness
+  and cross-browser compatibility. Facilitated seamless
   collaboration with multidisciplinary teams.
 resume_5_years: 2015-2016
 resume_5_subtitle: 4Finance
@@ -102,10 +102,9 @@ resume_6_subtitle: Island Port Technologies
 resume_6_position: Senior Frontend Developer
 resume_6_description: >
   Developed and optimized Angular-based frontend for a
-  secure financial system, incorporating Less, vanilla JS,
-  and Java/Scala/Play backend. Enhanced process efficiency,
-  ensured software quality with automated tests, and
-  optimized for smartphone use.
+  secure financial system, with Less, vanilla JS,
+  and Java/Scala/Play backend. Ensured software quality
+  with automated tests, and optimized for smartphones.
 resume_7_years: 2014-2015
 resume_7_subtitle: Full-stack Developer
 resume_7_position: TrueVision
@@ -120,11 +119,11 @@ resume_8_years: 2011-2012
 resume_8_subtitle: Flipping Enterprises Ltd.
 resume_8_position: Web Developer
 resume_8_description: >
-  Developed frontend and backend features for an internal
-  brokerage system using PHP, jQuery, and Yii2, ensuring
-  code quality and efficiency. Managed priorities, reported
-  to lead management, validated user input, and researched
-  emerging technologies.
+  Developed complex frontend and backend features for an internal
+  brokerage system using PHP, jQuery, and Yii2, ensuring high
+  code quality and efficiency. Managed priorities, reported issues
+  to lead management, validated user input, and thoroughly researched
+  necessary technologies.
 resume_download_cv: Download CV
 services_title_big: Services
 services_title: Services
@@ -162,6 +161,24 @@ skills_7_percent: "80"
 skills_8: Ruby / Ruby on Rails / PostgreSQL
 skills_8_percent: "70"
 
+counters_title: Last year
+counter_1_count: "60"
+counter_1_title: Features Developed
+counter_2_count: "7"
+counter_2_title: Projects Completed
+counter_3_count: "12"
+counter_3_title: People Taught
+counter_4_count: "15000"
+counter_4_title: Lines of Code Written
+
+hireme_im: "I&apos;m"
+hireme_available: Available
+hireme_for: for Freelancing
+hireme_text: >
+  I am presently available for freelance projects.
+  Engage my services for your project, and I assure
+  you of satisfactory results.
+hireme_hire_me: Hire Me
 contact_title_big: Contact
 contact_title: Contact Me
 contact_text: >

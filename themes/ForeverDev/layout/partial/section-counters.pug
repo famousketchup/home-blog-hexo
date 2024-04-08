@@ -1,23 +1,14 @@
 section#counters.ftco.ftco-no-pt.ftco-no-pb.ftco-counter.img
   .container
+    .row.justify-content-center.mb-5.pb-3
+      .col-md-7.heading-section.text-center.ftco-animate
+        h2.mb-4= __('counters_title')
     .row.d-md-flex.align-items-center
-      .col-md.d-flex.justify-content-center.counter-wrap.ftco-animate
-        .block-18
-          .text
-            strong.number(data-number="100") 0
-            span Awards
-      .col-md.d-flex.justify-content-center.counter-wrap.ftco-animate
-        .block-18
-          .text
-            strong.number(data-number="1200") 0
-            span Complete Projects
-      .col-md.d-flex.justify-content-center.counter-wrap.ftco-animate
-        .block-18
-          .text
-            strong.number(data-number="1200") 0
-            span Happy Customers
-      .col-md.d-flex.justify-content-center.counter-wrap.ftco-animate
-        .block-18
-          .text
-            strong.number(data-number="500") 0
-            span Cups of coffee
+      each counterNum in [1, 2, 3, 4]
+        .col-md.d-flex.justify-content-center.counter-wrap.ftco-animate
+          .block-18
+            .text
+              - counterCount = __('counter_' + counterNum + '_count')
+              - counterTitle = __('counter_' + counterNum + '_title')
+              strong.number(data-number=counterCount) 0
+              span= counterTitle

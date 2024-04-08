@@ -31,8 +31,6 @@ section#projects,
 .nav>li:nth-child(6),
 section#blog,
 .nav>li:nth-child(7),
-section#counters,
-section#hireme,
 form.contact-form {
   display: none;
 }
@@ -340,7 +338,6 @@ h5,
 
     .navbar-toggler {
       border: none;
-      color: rgba(0, 0, 0, 0.5) !important;
       border-color: rgba(0, 0, 0, 0.5) !important;
       cursor: pointer;
       text-transform: uppercase;
@@ -492,7 +489,7 @@ h5,
           width: 45%;
           position: relative;
           top: -40px;
-          height: 600px;
+          height: 600px !important;
           z-index: -1;
           background-size: contain;
 
@@ -562,6 +559,20 @@ h5,
               max-width: 50%;
               padding-left: 45px;
               padding-right: 3em;
+            }
+
+            @include media-breakpoint-down(xl) {
+
+              span,
+              h1,
+              h2 {
+                text-shadow: 0.08em 0.08em 0px #000000;
+              }
+
+              p>a:nth-child(2),
+              p>a:nth-child(3) {
+                text-shadow: 0.1em 0.1em 0px #000000;
+              }
             }
           }
         }
@@ -1169,7 +1180,12 @@ h5,
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 500;
+    
+    @include media-breakpoint-only(md) {
+      font-size: 1em;
+    }
   }
+
 }
 
 //PROGRESS BAR
@@ -1421,8 +1437,15 @@ textarea.form-control {
   padding: 7em 0;
   position: relative;
 
+  &#hireme {
+    padding: 7em 0 3em;
+  }
+
   @include media-breakpoint-down(sm) {
     padding: 6em 0;
+    &#hireme {
+      padding: 6em 0 3em;
+    }
   }
 }
 
@@ -1444,6 +1467,14 @@ textarea.form-control {
   padding: 7em 0;
   z-index: 0;
 
+  @include media-breakpoint-only(md) {
+    font-size: 0.75em;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
   .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -1456,6 +1487,9 @@ textarea.form-control {
       margin-bottom: 40px;
       font-size: 22px;
       font-weight: 600;
+      @include media-breakpoint-only(md) {
+        margin-bottom: 20px;
+      }
     }
 
     ul {
@@ -1848,6 +1882,19 @@ textarea.form-control {
         padding-top: 2px;
         color: rgba($white, 1);
       }
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+
+        >a {
+          display: block;
+        }
+
+        .icon,
+        .text {
+          display: inline-block;
+        }
+      }
     }
   }
 }
@@ -1962,9 +2009,22 @@ textarea.form-control {
   }
 
   .contact-info {
+    @include media-breakpoint-only(lg) {
+      h3 {
+        font-size: 0.95em;
+      }
+    }
+
+    @include media-breakpoint-only(lg) {
+      .col-md-6:nth-child(3) p a {
+        font-size: 0.875em;
+      }
+    }
+
     p {
       a {
         color: $white;
+
       }
 
       span {}

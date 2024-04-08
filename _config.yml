@@ -5,25 +5,36 @@
 # Site
 brand: ForeverDev
 title: ForeverDev - Your Ultimate Website Artisan!
-subtitle: ""
-description: ""
-keywords: blog
+description: >
+  ForeverDev is a personal website of Dmitriy Korotayev,
+  an experienced freelance fullstack developer based in
+  Riga, Latvia (Remote preferred).
+keywords: >
+  blog fullstack development website api seo training
+  ecommerce strategy hire contact services webdev web dev
+  app call us email hexo spa single page application
+  javascript react vue ruby rails postgresql mysql python
+  selenium linux git sass scss css3 html5 pug es2020
+  typescript resume cv portfolio projects about me freelance
+  riga latvia remote message chat telegram linkedin facebook
+  instagram twitter github soundcloud foreverdev forever
+  developer dmitriy korotayev team IT tech
+nav_links: [home, about, resume, services, skills, projects, blog, contact]
 services: [fullstack, api, seo, training, ecommerce, strategy]
-
 # Local info
 language: en
 author: Dmitriy Korotayev
 timezone: "Europe/Riga"
-email: foreveradeveloper@gmail.com
-email_mailto: mailto:foreveradeveloper@gmail.com
-phone: +371 29674887
-phone_int: 37129674887
+email: dmitriy@foreverdev.pro
+email_mailto: mailto:dmitriy@foreverdev.pro
+phone: +371 20520435
+phone_int: 37120520435
 
 # URL's / Paths
 url: http://foreverdev.xyz
 linkedin_url: https://linkedin.com/in/foreverdev
-telegram_url: https://t.me/MentalBruteforce
-telegram_handle: "@MentalBruteforce"
+telegram_url: https://t.me/ForeverDeveloper
+telegram_handle: "@ForeverDeveloper"
 facebook_url: https://facebook.com/ForeverADeveloper
 instagram_url: https://instagram.com/ForeverADeveloper
 github_url: https://github.com/dmitriy-korotayev
@@ -116,23 +127,25 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: ForeverDev
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+# Local admin backend
 admin:
   username: freek
   # Password hint: regular pass _ BloG
   password_hash: $2a$12$Jcdvtpp6N6k7an4yAQU9iOyp.3DemBVcPiZHWVAi/7RVUr93LiXCK
   secret: a secret somethingorother
+
+# Metadata, huh?
 metadata:
   author_id: freek
   language: en
 
-node_sass:
-  includePaths:
-    - node_modules
-
+# BrowserSync: reload all browsers when file changes
 browsersync:
   logLevel: "warn"
   ghostMode:

@@ -1,12 +1,14 @@
-section#hireme.ftco.ftco-hireme.img.margin-top(style="background-image: url(images/bg_1.jpg)")
+section#hireme.ftco-section.ftco-hireme.img.margin-top(style="background-image: url(img/hireme-background.jpg)")
   .container
     .row.justify-content-center
       .col-md-7.ftco-animate.text-center
         h2
-          | I'm
-          span Available
-          | for freelancing
+          != __('hireme_im')
+          = ' '
+          span= __('hireme_available')
+          = ' '
+          = __('hireme_for')
         p
-          | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          = __('hireme_text')
         p.mb-0
-          a.btn.btn-primary.py-3.px-5(href="#") Hire me
+          a.btn.btn-primary.py-3.px-5(href=config.email_mailto)= __('hireme_hire_me')
