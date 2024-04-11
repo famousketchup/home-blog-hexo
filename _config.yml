@@ -27,6 +27,7 @@ author: Dmitriy Korotayev
 timezone: "Europe/Riga"
 email: dmitriy@foreverdev.pro
 email_mailto: mailto:dmitriy@foreverdev.pro
+email_hire_mailto: mailto:hire@foreverdev.pro
 phone: +371 20520435
 phone_int: 37120520435
 
@@ -37,9 +38,9 @@ telegram_url: https://t.me/ForeverDeveloper
 telegram_handle: "@ForeverDeveloper"
 facebook_url: https://facebook.com/ForeverADeveloper
 instagram_url: https://instagram.com/ForeverADeveloper
-github_url: https://github.com/dmitriy-korotayev
+github_url: https://github.com/famousketchup
 twitter_url: https://twitter.com/ForeverADev
-soundcloud_url: https://soundcloud.com/dmitriy-korotayev
+soundcloud_url: https://soundcloud.com/schicko
 cv_file_path: docs/CV - Dmitriy Korotayev.pdf
 
 permalink: :year/:month/:day/:title/
@@ -136,8 +137,8 @@ deploy:
 # Local admin backend
 admin:
   username: freek
-  # Password hint: regular pass _ BloG
-  password_hash: $2a$12$Jcdvtpp6N6k7an4yAQU9iOyp.3DemBVcPiZHWVAi/7RVUr93LiXCK
+  # Password hint: regular pass with blog
+  password_hash: $2a$10$tlFlf3osN0yuW9ysioy/oudGi192Ar.yAEg4GrnRISRkhaIp4Hcuq
   secret: a secret somethingorother
 
 # Metadata, huh?

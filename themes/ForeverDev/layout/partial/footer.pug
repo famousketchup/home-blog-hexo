@@ -2,8 +2,8 @@
   .row.mb-5
     .col-md-3
       .ftco-footer-widget.mb-4
-        h2.ftco-heading-2= __('footer_about_title')
-        p= __('footer_about_text')
+        h2.ftco-heading-2= __('footer.about_title')
+        p= __('footer.about_text')
         ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
           li.ftco-animate
             a(href=config.telegram_url target='_blank')
@@ -30,28 +30,28 @@
               span.icon-soundcloud
     .col-md-2
       .ftco-footer-widget.mb-4.ml-md-4
-        h2.ftco-heading-2= __('footer_links_title')
+        h2.ftco-heading-2= __('footer.links_title')
         ul.list-unstyled
           li
             a(href='#home')
               span.icon-long-arrow-right.mr-2
-              = __('nav_link_home')
+              = __('nav.link_home')
           li
             a(href='#about')
               span.icon-long-arrow-right.mr-2
-              = __('nav_link_about')
+              = __('nav.link_about')
           li
             a(href='#services')
               span.icon-long-arrow-right.mr-2
-              = __('nav_link_services')
+              = __('nav.link_services')
           li
             a(href='#skills')
               span.icon-long-arrow-right.mr-2
-              = __('nav_link_skills')
+              = __('nav.link_skills')
           li
             a(href='#contact')
               span.icon-long-arrow-right.mr-2
-              = __('nav_link_contact')
+              = __('nav.link_contact')
     .col-md-3
       .ftco-footer-widget.mb-4
         h2.ftco-heading-2= __('services_title')
@@ -60,11 +60,11 @@
             li
               a(href='#services')
                 span.icon-long-arrow-right.mr-2
-                - serviceTitle = 'footer_service_' + service + '_title'
+                - serviceTitle = 'footer.service_' + service + '_title'
                 = __(serviceTitle)
     .col-md-4
       .ftco-footer-widget.mb-4
-        h2.ftco-heading-2= __('footer_question')
+        h2.ftco-heading-2= __('footer.question')
         .block-23.mb-3
           ul
             li

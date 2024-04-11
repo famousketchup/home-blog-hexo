@@ -5,8 +5,11 @@ url: https://github.com/dmitriy-korotayev/hexo-theme-ForeverDev
 
 favicon: /img/favicon.svg
 
-# Analytics (TODO)
-google_analytics:
+# Analytics
+google_analytics: TODO
+
+# Comments
+disqus: TODOdisqus_shortname
 
 sass:
   file: scss/style.scss

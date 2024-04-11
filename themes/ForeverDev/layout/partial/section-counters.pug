@@ -2,13 +2,13 @@ section#counters.ftco.ftco-no-pt.ftco-no-pb.ftco-counter.img
   .container
     .row.justify-content-center.mb-5.pb-3
       .col-md-7.heading-section.text-center.ftco-animate
-        h2.mb-4= __('counters_title')
+        h2.mb-4= __('counters.title')
     .row.d-md-flex.align-items-center
       each counterNum in [1, 2, 3, 4]
         .col-md.d-flex.justify-content-center.counter-wrap.ftco-animate
           .block-18
             .text
-              - counterCount = __('counter_' + counterNum + '_count')
-              - counterTitle = __('counter_' + counterNum + '_title')
+              - counterCount = __('counter.' + counterNum + '_count')
+              - counterTitle = __('counter.' + counterNum + '_title')
               strong.number(data-number=counterCount) 0
               span= counterTitle

@@ -1,27 +1,46 @@
 mixin postedOn(item)
-    tim
-      != full_date(item.date, config.date_format)
+  time
+    != full_date(item.date, config.date_format)
 
 mixin postTitle(title)
-    if title
-        != title
-    else
-        != __('untitled')
+  if title
+    != title
+  else
+    != __('blog.untitled')
 
-mixin postComingSoon()
-  li.post
+// Recent Posts
+mixin recent_posts()
+  ul.home.post-list
+    - page.posts.each(function (item) {
+      li.post-list-item
+        article.post-block
+          h2.post-title
+            a.post-title-link(href=url_for(item.path) class="no-barba")
+              +postTitle(item.title)
+          +postInfo(item)
+          .post-content
+            != item.excerpt
+          a.read-more(href=url_for(item.path))
+            != __('blog.read_more')
+    - })
+
+// Post Page
+mixin post(item)
+  .post
     article.post-block
-      h2.post-title Coming Soon
-      section.posted-on
-      p.post-excerpt
-        != __('empty_post_lipsum')
+      h1.post-title
+        +postTitle(item.title)
+      +postInfo(item)
+      .post-content
+        != item.content
 
 //- Index Page 3 Latest posts (even if not enough)
 mixin posts-latest()
   ul.home.post-list
     - let posts = []
     - page.posts.each(post => posts.push(post))
-    - if(posts.length < 3) posts = posts.concat(new Array(3-posts.length).fill('empty'))
+    - if(posts.length < 3)
+    -    posts = posts.concat(new Array(3-posts.length).fill('empty'))
     - posts.forEach(post => {
       - if(typeof post != 'object') {
         +postComingSoon()
@@ -37,52 +56,6 @@ mixin posts-latest()
             p.post-excerpt
               != post.excerpt
             a.read-more(href=url_for(post.path))
-              != __('read_more')
+              != __('blog.read_more')
       - }
     - })
-
-//- Posts: TODO
-mixin posts()
-    ul.home.post-list
-        - page.posts.each(function (item) {
-            li.post-list-item
-                article.post-block
-                    h2.post-title
-                        a.post-title-link(href=url_for(item.path) class="no-barba")
-                            +postTitle(item.title)
-                    +postInfo(item)
-                    .post-content
-                        != item.excerpt
-                    a.read-more(href=url_for(item.path))
-                        != __('read_more')
-        - })
-
-//- Archive Page: TODO
-mixin postList()
-    .archive
-        - var year = 0;
-        - var change = false;
-        - page.posts.each(function (item) {
-            - var itemYear = date(item.date, 'YYYY') - 0;
-            - change = year !== itemYear;
-            - year = change ? itemYear : year;
-            if change
-                h2.archive-year
-                    != year
-            .post-item
-                +postInfo(item)
-                a.post-title-link(href=url_for(item.path))
-                    +postTitle(item.title)
-        - })
-
-
-
-//- Post Page: TODO
-mixin post(item)
-    .post
-        article.post-block
-            h1.post-title
-                +postTitle(item.title)
-            +postInfo(item)
-            .post-content
-                != item.content

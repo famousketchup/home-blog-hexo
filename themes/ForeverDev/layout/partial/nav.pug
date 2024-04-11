@@ -6,16 +6,16 @@
     data-target='#ftco-nav',
     aria-controls='ftco-nav',
     aria-expanded='false',
-    aria-label=__('nav_toggle_navigation')
+    aria-label=__('nav.toggle_navigation')
     )
     span.oi.oi-menu
       = ' '
-      = __('nav_menu')
+      = __('nav.menu')
   #ftco-nav.collapse.navbar-collapse
     ul.navbar-nav.nav.ml-auto
       each link in config.nav_links
         li.nav-item
           - href = '#'+link
           a.nav-link(href=href)
-            - title = __('nav_link_' + link)
+            - title = __('nav.link_' + link)
             span= title

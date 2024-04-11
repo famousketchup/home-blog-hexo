@@ -2,18 +2,18 @@ section#skills.ftco-section
   .container
     .row.justify-content-center.pb-5
       .col-md-12.heading-section.text-center.ftco-animate
-        h1.big.big-2= __('skills_title_big')
-        h2.mb-4= __('skills_title')
-        p= __('skills_text')
+        h1.big.big-2= __('skills.title_big')
+        h2.mb-4= __('skills.title')
+        p= __('skills.text')
     .row
       - var skillsNum = [1, 2, 3, 4, 5, 6, 7, 8]
       each skillNum in skillsNum
         .col-md-6.animate-box
           .progress-wrap.ftco-animate
-            - skill = __('skills_' + skillNum)
-            h3= skill
+            - skillTitle = __('skills.' + skillNum + '_title')
+            h3= skillTitle
             .progress
-              - const percentVal = __('skills_' + skillNum + '_percent')
+              - const percentVal = __('skills.' + skillNum + '_percent')
               - const percent = percentVal+'%'
               - const style = 'width:' + percent
               - const klass = 'progress-bar color-'+skillNum

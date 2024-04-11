@@ -2,15 +2,15 @@ section#contact.ftco-section.contact-section.ftco-no-pb
   .container
     .row.justify-content-center.mb-5.pb-3
       .col-md-7.heading-section.text-center.ftco-animate
-        h1.big.big-2= __('contact_title_big')
-        h2.mb-4= __('contact_title')
-        p= __('contact_text')
+        h1.big.big-2= __('contact.title_big')
+        h2.mb-4= __('contact.title')
+        p= __('contact.text')
     .row.d-flex.contact-info.mb-5
       .col-md-6.col-lg-3.d-flex.ftco-animate
         .align-self-stretch.box.p-4.text-center
           .icon.d-flex.align-items-center.justify-content-center
             span.icon-linkedin-square
-          h3.mb-4= __('contact_linkedin')
+          h3.mb-4= __('contact.linkedin')
           p
             - linkedinLink = config.linkedin_url
             - linkedinText = config.linkedin_url.replace(/^https?:\/\//, '')
@@ -19,7 +19,7 @@ section#contact.ftco-section.contact-section.ftco-no-pb
         .align-self-stretch.box.p-4.text-center
           .icon.d-flex.align-items-center.justify-content-center
             span.icon-phone2
-          h3.mb-4= __('contact_phone')
+          h3.mb-4= __('contact.phone')
           p
             - phoneLink = 'tel://' + config.phone_int
             a(href=phoneLink)= config.phone
@@ -27,7 +27,7 @@ section#contact.ftco-section.contact-section.ftco-no-pb
         .align-self-stretch.box.p-4.text-center
           .icon.d-flex.align-items-center.justify-content-center
             span.icon-contact_mail
-          h3.mb-4= __('contact_email')
+          h3.mb-4= __('contact.email')
           p
             - emailLink = 'mailto:' + config.email
             a(href=emailLink target="_blank")= config.email
@@ -35,7 +35,7 @@ section#contact.ftco-section.contact-section.ftco-no-pb
         .align-self-stretch.box.p-4.text-center
           .icon.d-flex.align-items-center.justify-content-center
             span.icon-telegram
-          h3.mb-4= __('contact_telegram')
+          h3.mb-4= __('contact.telegram')
           p
             - telegramLink = config.telegram_url
             a(href=telegramLink)= config.telegram_handle

@@ -8,34 +8,34 @@ section#about.ftco-about.img.ftco-section.ftco-no-pb
       .col-md-6.col-lg-7.pl-lg-5.pb-5
         .row.justify-content-start.pb-3
           .col-md-12.heading-section.ftco-animate
-            h1.big= __('about_title_big')
-            h2.mb-4= __('about_title')
-            p= __('about_text')
+            h1.big= __('about.title_big')
+            h2.mb-4= __('about.title')
+            p= __('about.text')
             ul.about-info.mt-4.px-md-0.px-2
               li.d-flex
                 span= config.author
-                span= __('about_name_value')
+                span= __('about.name_value')
               li.d-flex
-                span= __('about_birth_date')
-                span= __('about_birth_date_value')
+                span= __('about.birth_date')
+                span= __('about.birth_date_value')
               li.d-flex
-                span= __('about_location')
-                span= __('about_location_value')
+                span= __('about.location')
+                span= __('about.location_value')
               li.d-flex
-                span= __('about_email')
+                span= __('about.email')
                 span= config.email
               li.d-flex
-                span= __('about_phone')
+                span= __('about.phone')
                 span= config.phone
         .counter-wrap.ftco-animate.d-flex.mt-md-3
           .text
             p.mb-4
-              - const projectsCount = __('about_projects_count')
+              - const projectsCount = __('about.projects_count')
               span.number(data-number=projectsCount) 0
               = ' '
-              span= __('about_projects_complete')
+              span= __('about.projects_complete')
             p
               a.btn.btn-primary.py-3.px-3(
                 href=url_for(config.cv_file_path)
                 )
-                = __('about_download_cv')
+                = __('about.download_cv')
