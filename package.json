@@ -30,7 +30,7 @@
     "mime": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^9.1.1",
     "hexo-renderer-sass-next": "^0.1.3"
   }
 }
