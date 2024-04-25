@@ -25,19 +25,22 @@ $secondary: #a0f669;
   transition: all $transition ease;
 }
 
-// TEMPORARY
+// TODO: Remove
+// (Temporarily hide projects, blog & contact form)
 #link-my-works,
 section#projects,
 .nav>li:nth-child(6),
 section#blog,
 .nav>li:nth-child(7),
-form.contact-form {
+section#contact .row.no-gutters {
   display: none;
 }
 
-html {
-  // overflow-x: hidden;
-}
+// # General
+
+// html {
+//   overflow-x: hidden;
+// }
 
 body {
   font-family: $font-primary;
@@ -85,6 +88,8 @@ h5,
 .text-primary {
   color: $primary !important;
 }
+
+// # Nav
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -403,7 +408,8 @@ h5,
   }
 }
 
-//OWL CAROUSEL
+// # Plugin: Owl Carousel
+
 .owl-carousel {
   position: relative;
 
@@ -548,6 +554,10 @@ h5,
 
           .text {
             width: 100%;
+
+            @include media-breakpoint-down(xs) {
+              margin-top: 50px;
+            }
 
             @include media-breakpoint-up(lg) {
               position: absolute;
@@ -850,6 +860,8 @@ h5,
   }
 }
 
+// # Styling: Backgrounds
+
 .bg-light {
   background: #f8f9fa !important;
 }
@@ -862,7 +874,8 @@ h5,
   background: $primary;
 }
 
-//BUTTON
+// # Element: Button
+
 .btn {
   cursor: pointer;
   @include border-radius(40px);
@@ -954,7 +967,8 @@ h5,
   }
 }
 
-//FTCO ABOUT
+// # Section: About
+
 .ftco-about {
   .img-about {
     width: 100%;
@@ -967,6 +981,37 @@ h5,
       width: 100%;
       position: relative;
       z-index: 1;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    h1,
+    h2 {
+      text-align: center
+    }
+
+    .heading-section h1.big {
+      top: -20px;
+      left: 50%;
+      width: 200px;
+      margin-left: -135px;
+      top: -20px;
+      font-size: 3em;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .heading-section h1.big {
+      top: -20px;
+      font-size: 2.625em;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .heading-section h1.big {
+      top: -20px;
+      font-size: 3.25em;
     }
   }
 
@@ -993,6 +1038,11 @@ h5,
   }
 
   .counter-wrap {
+    @include media-breakpoint-down(xs) {
+      justify-content: center;
+      text-align: center;
+    }
+
     .text {
       p {
         font-size: 20px;
@@ -1008,6 +1058,14 @@ h5,
         }
       }
     }
+  }
+}
+
+// # Section: Resume
+
+section#resume {
+  @include media-breakpoint-down(md) {
+    padding-top: 3em;
   }
 }
 
@@ -1036,7 +1094,8 @@ h5,
   }
 }
 
-//SERVICES
+// # Section: Services
+
 // .services{
 // 	@include transition(.3s);
 // 	.icon{
@@ -1054,6 +1113,13 @@ h5,
 // 		}
 // 	}
 // }
+
+section#services {
+  @include media-breakpoint-up(md) {
+    padding: 0 0 3rem;
+  }
+}
+
 .service {
   margin-bottom: 40px;
   padding: 2em;
@@ -1062,6 +1128,11 @@ h5,
   -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+
+  @include media-breakpoint-down(md) {
+    padding: 1em 2em;
+    margin-bottom: 10px;
+  }
 
   .icon {
     display: block;
@@ -1171,7 +1242,18 @@ h5,
   }
 }
 
-//SKILLS--------------------
+// # Section: Skills
+
+section#skills {
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+
 .progress-wrap {
   width: 100%;
   margin-bottom: 30px;
@@ -1180,7 +1262,7 @@ h5,
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 500;
-    
+
     @include media-breakpoint-only(md) {
       font-size: 1em;
     }
@@ -1188,7 +1270,8 @@ h5,
 
 }
 
-//PROGRESS BAR
+// # Plugin: Progress Bar
+
 .progress {
   height: 10px;
   box-shadow: none;
@@ -1229,10 +1312,11 @@ h5,
   }
 }
 
-// HIRE ME
-.ftco-hireme {
-  background: $primary;
-  z-index: -1;
+// # Section: Hire me
+
+section#hireme {
+  background-color: $primary;
+  margin-top: 5vw;
 
   h2 {
     color: $white;
@@ -1243,16 +1327,14 @@ h5,
       color: $primary;
     }
   }
-}
 
-.margin-top {
-  @include media-breakpoint-up(lg) {
-    margin-top: -70px;
-    padding-top: 10em !important;
+  p.text {
+    text-shadow: 2px 2px 0 #000;
   }
 }
 
-//PROJECT
+// # Section: Projects
+
 .project {
   width: 100%;
   height: 285px;
@@ -1356,7 +1438,8 @@ h5,
   }
 }
 
-// USEFUL CODE
+// # Miscellaneous styling
+
 .aside-stretch {
   background: lighten($primary, 10%);
 
@@ -1418,7 +1501,7 @@ textarea.form-control {
   background: $primary !important;
 }
 
-//ABOUT
+// # Section: About
 .about-author {
   @include border-radius(5px);
 
@@ -1433,21 +1516,26 @@ textarea.form-control {
   .bio {}
 }
 
+// # Sections: padding
+
 .ftco-section {
   padding: 7em 0;
   position: relative;
 
   &#hireme {
-    padding: 7em 0 3em;
+    padding: 7em 0 6em;
   }
 
   @include media-breakpoint-down(sm) {
-    padding: 6em 0;
+    padding: 0;
+
     &#hireme {
       padding: 6em 0 3em;
     }
   }
 }
+
+// # Section building blocks
 
 .ftco-no-pt {
   padding-top: 0 !important;
@@ -1461,18 +1549,24 @@ textarea.form-control {
   background: #3c312e;
 }
 
+// # Footer
+
 .ftco-footer {
   font-size: 16px;
   background: $black;
-  padding: 7em 0;
+  padding: 4em 0;
   z-index: 0;
 
   @include media-breakpoint-only(md) {
     font-size: 0.75em;
   }
-  
+
   @include media-breakpoint-down(sm) {
     text-align: center;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
   }
 
   .ftco-footer-logo {
@@ -1481,12 +1575,17 @@ textarea.form-control {
   }
 
   .ftco-footer-widget {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px !important;
+    }
+
     h2 {
       font-weight: normal;
       color: $white;
       margin-bottom: 40px;
       font-size: 22px;
       font-weight: 600;
+
       @include media-breakpoint-only(md) {
         margin-bottom: 20px;
       }
@@ -1592,7 +1691,7 @@ textarea.form-control {
   }
 }
 
-// Map
+// # Map
 
 #map {
   // height: 400px;
@@ -1633,6 +1732,8 @@ textarea.form-control {
     box-shadow: 0 0 0 0 rgba($primary, 0);
   }
 }
+
+// # Section headings
 
 .heading-section {
   position: relative;
@@ -1689,7 +1790,8 @@ textarea.form-control {
   }
 }
 
-//COVER BG
+// # Backgrounds
+
 .img,
 .blog-img,
 .user-img {
@@ -1698,7 +1800,7 @@ textarea.form-control {
   background-position: center center;
 }
 
-// magnific pop up
+// # Plugin: Magnific image popup
 
 .image-popup {
   cursor: -webkit-zoom-in;
@@ -1729,9 +1831,15 @@ textarea.form-control {
   opacity: 0;
 }
 
-#section-counter {
+// # Section: Counters
+
+section#counters {
   position: relative;
   z-index: 0;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+  }
 }
 
 .ftco-counter {
@@ -1787,7 +1895,8 @@ textarea.form-control {
   }
 }
 
-//blocks
+// # Block 20, eh?
+
 .block-20 {
   overflow: hidden;
   background-size: cover;
@@ -1798,6 +1907,8 @@ textarea.form-control {
   width: 100%;
   height: 350px;
 }
+
+// # Section: Blog
 
 .blog-entry {
   position: relative;
@@ -1852,6 +1963,8 @@ textarea.form-control {
     }
   }
 }
+
+// # Block 23, 6, 27 eh?
 
 .block-23 {
   ul {
@@ -1952,7 +2065,15 @@ textarea.form-control {
   }
 }
 
+// # Section: Contact
+
 .contact-section {
+  @include media-breakpoint-down(md) {
+    padding-top: 3em;
+  }
+
+  padding-top: 5em;
+
   .contact-info {
     p {
       a {
@@ -1970,6 +2091,7 @@ textarea.form-control {
 
     @include media-breakpoint-down(md) {
       margin-bottom: 30px;
+      padding: 1rem 0 !important;
     }
 
     .icon {
@@ -2043,6 +2165,8 @@ textarea.form-control {
   }
 }
 
+// # Block 9, 21
+
 .block-9 {
   .form-control {
     outline: none !important;
@@ -2050,10 +2174,9 @@ textarea.form-control {
     font-size: 15px;
   }
 
-  #map {}
+  // #map {}
 }
 
-//### .block-21
 .block-21 {
   .blog-img {
     display: block;
@@ -2097,7 +2220,8 @@ textarea.form-control {
   }
 }
 
-/* Blog*/
+// # Page: Blog
+
 .post-info {
   font-size: 12px;
   text-transform: uppercase;
@@ -2225,7 +2349,7 @@ textarea.form-control {
   }
 }
 
-// sidebar
+// ## Sidebar
 
 .sidebar-box {
   margin-bottom: 30px;
@@ -2287,6 +2411,8 @@ textarea.form-control {
     }
   }
 }
+
+// # Plugin: Loader
 
 #ftco-loader {
   position: fixed;
