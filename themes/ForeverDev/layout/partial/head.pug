@@ -19,7 +19,18 @@ block keywords
     content=config.keywords ? config.keywords : __('meta_keywords'))
     
 
-link(rel='icon', href=url_for(theme.favicon))
+//- Android Chrome Icons
+link(rel='icon', type='image/png', sizes='192x192', href=url_for('img/android-chrome-192x192.png'))
+link(rel='icon', type='image/png', sizes='512x512', href=url_for('img/android-chrome-512x512.png'))
+
+//- Apple Touch Icon
+link(rel='apple-touch-icon', sizes='180x180', href=url_for('img/apple-touch-icon.png'))
+
+//- Favicon for different sizes
+link(rel='icon', type='image/x-icon', href=url_for('img/favicon.ico'))
+link(rel='icon', type='image/png', sizes='16x16', href=url_for('img/favicon-16x16.ico'))
+link(rel='icon', type='image/png', sizes='32x32', href=url_for('img/favicon-32x32.ico'))
+
 // link(rel='search', type='application/opensearchdescription+xml', href=url_for('atom.xml'), title=config.title)
 
 link(

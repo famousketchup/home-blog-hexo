@@ -1,94 +1,95 @@
-.container
-  .row.mb-5
-    .col-md-3
-      .ftco-footer-widget.mb-4
-        h2.ftco-heading-2= __('footer.about_title')
-        p= __('footer.about_text')
-        ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
-          li.ftco-animate
-            a(href=config.telegram_url target='_blank')
-              span.icon-telegram
-          = ' '
-          li.ftco-animate
-            a(href=config.facebook_url target='_blank')
-              span.icon-facebook
-          = ' '
-          li.ftco-animate
-            a(href=config.instagram_url target='_blank')
-              span.icon-instagram
-          = ' '
-          li.ftco-animate
-            a(href=config.github_url target='_blank')
-              span.icon-github
-          = ' '
-          li.ftco-animate
-            a(href=config.twitter_url target='_blank')
-              span.icon-twitter
-          = ' '
-          li.ftco-animate
-            a(href=config.soundcloud_url target='_blank')
-              span.icon-soundcloud
-    .col-md-2
-      .ftco-footer-widget.mb-4.ml-md-4
-        h2.ftco-heading-2= __('footer.links_title')
-        ul.list-unstyled
-          li
-            a(href='#home')
-              span.icon-long-arrow-right.mr-2
-              = __('nav.link_home')
-          li
-            a(href='#about')
-              span.icon-long-arrow-right.mr-2
-              = __('nav.link_about')
-          li
-            a(href='#services')
-              span.icon-long-arrow-right.mr-2
-              = __('nav.link_services')
-          li
-            a(href='#skills')
-              span.icon-long-arrow-right.mr-2
-              = __('nav.link_skills')
-          li
-            a(href='#contact')
-              span.icon-long-arrow-right.mr-2
-              = __('nav.link_contact')
-    .col-md-3
-      .ftco-footer-widget.mb-4
-        h2.ftco-heading-2= __('services.title')
-        ul.list-unstyled
-          each service in config.services
+footer.ftco-footer.ftco-section
+  .container
+    .row.mb-5
+      .col-md-3
+        .ftco-footer-widget.mb-4
+          h2.ftco-heading-2= __('footer.about_title')
+          p= __('footer.about_text')
+          ul.ftco-footer-social.list-unstyled.float-md-left.float-lft.mt-5
+            li.ftco-animate
+              a(href=config.telegram_url target='_blank')
+                span.icon-telegram
+            = ' '
+            li.ftco-animate
+              a(href=config.facebook_url target='_blank')
+                span.icon-facebook
+            = ' '
+            li.ftco-animate
+              a(href=config.instagram_url target='_blank')
+                span.icon-instagram
+            = ' '
+            li.ftco-animate
+              a(href=config.github_url target='_blank')
+                span.icon-github
+            = ' '
+            li.ftco-animate
+              a(href=config.twitter_url target='_blank')
+                span.icon-twitter
+            = ' '
+            li.ftco-animate
+              a(href=config.soundcloud_url target='_blank')
+                span.icon-soundcloud
+      .col-md-2
+        .ftco-footer-widget.mb-4.ml-md-4
+          h2.ftco-heading-2= __('footer.links_title')
+          ul.list-unstyled
+            li
+              a(href='#home')
+                span.icon-long-arrow-right.mr-2
+                = __('nav.link_home')
+            li
+              a(href='#about')
+                span.icon-long-arrow-right.mr-2
+                = __('nav.link_about')
             li
               a(href='#services')
                 span.icon-long-arrow-right.mr-2
-                - serviceTitle = 'footer.service_' + service + '_title'
-                = __(serviceTitle)
-    .col-md-4
-      .ftco-footer-widget.mb-4
-        h2.ftco-heading-2= __('footer.question')
-        .block-23.mb-3
-          ul
+                = __('nav.link_services')
             li
-              - emailLink = 'mailto:' + config.email
-              a(href=emailLink)
-                span.icon.icon-envelope
-                span.text= config.email
+              a(href='#skills')
+                span.icon-long-arrow-right.mr-2
+                = __('nav.link_skills')
             li
-              - phoneLink = 'tel://' + config.phone_int
-              a(href=phoneLink)
-                span.icon.icon-phone
-                span.text= config.phone
-            li
-              a(href=config.telegram_url target='_blank')
-                span.icon.icon-telegram
-                span.text= config.telegram_handle
-  .row
-    .col-md-12.text-center
-      p
-        // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-        != 'Copyright &copy;'
-        = ' '
-        script= 'document.write(new Date().getFullYear());'
-        = ' ' + config.author + ' / '
-        a(href='https://colorlib.com', target='_blank') Colorlib
-        // Link back to Colorlib can't be removed.
-        // Template is licensed under CC BY 3.0.
+              a(href='#contact')
+                span.icon-long-arrow-right.mr-2
+                = __('nav.link_contact')
+      .col-md-3
+        .ftco-footer-widget.mb-4
+          h2.ftco-heading-2= __('services.title')
+          ul.list-unstyled
+            each service in config.services
+              li
+                a(href='#services')
+                  span.icon-long-arrow-right.mr-2
+                  - serviceTitle = 'footer.service_' + service + '_title'
+                  = __(serviceTitle)
+      .col-md-4
+        .ftco-footer-widget.mb-4
+          h2.ftco-heading-2= __('footer.question')
+          .block-23.mb-3
+            ul
+              li
+                - emailLink = 'mailto:' + config.email
+                a(href=emailLink)
+                  span.icon.icon-envelope
+                  span.text= config.email
+              li
+                - phoneLink = 'tel://' + config.phone_int
+                a(href=phoneLink)
+                  span.icon.icon-phone
+                  span.text= config.phone
+              li
+                a(href=config.telegram_url target='_blank')
+                  span.icon.icon-telegram
+                  span.text= config.telegram_handle
+    .row
+      .col-md-12.text-center
+        p
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+          != 'Copyright &copy;'
+          = ' '
+          script= 'document.write(new Date().getFullYear());'
+          = ' ' + config.author + ' / '
+          a(href='https://colorlib.com', target='_blank') Colorlib
+          // Link back to Colorlib can't be removed.
+          // Template is licensed under CC BY 3.0.

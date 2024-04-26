@@ -8,11 +8,10 @@ html(lang=config.language)
     data-offset='300'
   )
     block body_top
-    nav#ftco-navbar(
-      class='navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target'
-    )
-      include nav.pug
+
+    include nav.pug
+
     block content
-    footer.ftco-footer.ftco-section
-      include footer.pug
+
+    include footer.pug
     include scripts.pug
