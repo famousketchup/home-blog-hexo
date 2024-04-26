@@ -7,6 +7,7 @@ favicon: /img/favicon.svg
 
 # Analytics
 google_analytics: G-FW8PJEJBF7
+google_tag_manager: GTM-5ZQZQZ2
 
 # Comments
 disqus: TODO_disqus_shortname
