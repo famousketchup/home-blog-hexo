@@ -41,17 +41,15 @@ section#contact.ftco-section.contact-section.ftco-no-pb
             a(href=telegramLink)= config.telegram_handle
     // Temporarily hidden
     .row.no-gutters.block-9
-      .col-md-6.order-md-last.d-flex
-        form.bg-light.p-4.p-md-5.contact-form(action='#')
+      .order-md-last
+        form.bg-light.p-4.p-md-5.contact-form(action='#' netlify=true)
           .form-group
-            input.form-control(type='text', placeholder='Your Name')
+            input.form-control(type='text', placeholder='Your Name' name='name')
           .form-group
-            input.form-control(type='text', placeholder='Your Email')
+            input.form-control(type='text', placeholder='Your Email' name='email')
           .form-group
-            input.form-control(type='text', placeholder='Subject')
+            input.form-control(type='text', placeholder='Subject' name='subject')
           .form-group
-            textarea.form-control(name='', id='', cols='30', rows='7', placeholder='Message')
+            textarea.form-control(id='', cols='30', rows='7', placeholder='Message' name='message')
           .form-group
             input.btn.btn-primary.py-3.px-5(type='submit', value='Send Message')
-      .col-md-6.d-flex
-        .img(style='background-image: url(img/about.jpg);')

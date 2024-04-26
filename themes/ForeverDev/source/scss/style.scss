@@ -31,8 +31,7 @@ $secondary: #a0f669;
 section#projects,
 .nav>li:nth-child(6),
 section#blog,
-.nav>li:nth-child(7),
-section#contact .row.no-gutters {
+.nav>li:nth-child(7) {
   display: none;
 }
 
@@ -2083,6 +2082,14 @@ section#counters {
   }
 
   padding-top: 5em;
+
+  .block-9 {
+    justify-content: center;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 50px;
+    }
+  }
 
   .contact-info {
     p {
