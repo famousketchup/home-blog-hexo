@@ -27,7 +27,7 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-collapse-spoiler": "^1.0.0",
     "hexo-theme-landscape": "^1.0.0",
-    "mime": "^4.0.1"
+    "mime": "^4.0.2"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
