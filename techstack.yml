@@ -1,0 +1,132 @@
+repo_name: dmitriy-korotayev/home-blog-hexo
+report_id: d8b58469d5dca2fd6c060cd174935599
+version: 0.1
+repo_type: Public
+timestamp: '2024-04-08T13:19:05+00:00'
+requested_by: dmitriy-korotayev
+provider: github
+branch: main
+detected_tools_count: 10
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo
+  detection_source: Repo Metadata
+- name: EJS
+  description: An Embedded JavaScript templating Language
+  website_url: https://ejs.co/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-01-14 02:14:59.000000000 Z
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo
+  detection_source: Repo Metadata
+- name: BrowserSync
+  description: Reload all your browsers, every time you hit save
+  website_url: http://www.browsersync.io/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Live Reloading
+  image_url: https://img.stackshare.io/service/2600/c22Igh9q.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-03-10 21:39:37.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-01-14 02:14:59.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo
+  detection_source: Repo Metadata
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-01-14 02:14:59.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-01-14 02:14:59.000000000 Z
+- name: Hexo
+  description: A fast, simple &amp; powerful blog framework, powered by Node.js
+  website_url: http://hexo.io/
+  version: 7.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Static Site Generators
+  image_url: https://img.stackshare.io/service/1154/mQZOTo9f.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-01-14 02:14:59.000000000 Z
+- name: mime
+  description: A comprehensive library for mime-type mapping
+  package_url: https://www.npmjs.com/mime
+  version: 1.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16182/default_ac04a744873b460c4ef30a7450ed0c83223640ab.png
+  detection_source_url: https://github.com/dmitriy-korotayev/home-blog-hexo/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: Dmitriy Korotayev
+  last_updated_on: 2024-02-04 09:05:35.000000000 Z
